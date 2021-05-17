@@ -15,7 +15,7 @@ function CustomTabs() {
   };
   const [movieDetail, setMovieDetail] = useState([])
   useEffect(() => {
-    fetch('/testAPI/').then(res => {
+    fetch('/movieAPI/').then(res => {
       if(res.ok) {
         return res.json()
       }
