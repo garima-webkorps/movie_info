@@ -2,9 +2,13 @@
   "name": "api",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "client": "cd ../my-app && npm start",
-    "start": "concurrently \"node ./bin/www\" \"npm run client\""
+    "start": "concurrently \"node ./bin/www\" \"npm run client\"",
+    "heroku-postbuild": "ng build --prod"
   },
   "dependencies": {
     "concurrently": "^6.1.0",
