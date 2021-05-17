@@ -1,0 +1,99 @@
+@import "css/variables.scss";
+.navbar {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border: none;
+  background-color: #212529;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  .navbar-brand  {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+    color: $primaryColor !important;
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #fff !important;
+  } 
+}
+header {
+  padding-top: 17rem;
+  padding-bottom: 5.5rem;
+  text-align: center;
+  color: #fff;
+  background-image: url(./header-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  .sub-heading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  .heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.nav-tabs {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-bottom: none;
+  .nav-link {
+    font-size: 2rem;
+    padding: 20px;
+    color: #fff !important;
+  }
+  .nav-link.active {
+    color: $primaryColor !important;
+    background-color: #353334 !important;
+    border-bottom: 8px solid $primaryColor !important;
+    border-color: $primaryColor !important;
+  }
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #000 !important;
+  color: white !important;
+}
+.movie.table-striped tbody tr {
+  cursor: pointer;
+}
+
+.redirection {
+  position: fixed;
+  left: 50%;
+  z-index: 1050;
+  top: 2%;
+  li {
+    display: inline-block;
+    padding: 0 16px;
+  }
+  a {
+    color: white !important;
+    font-size: 20px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
