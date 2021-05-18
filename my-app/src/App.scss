@@ -97,3 +97,10 @@ header {
     }
   }
 }
+.svgLoader {
+  margin-left: 50%;
+  margin: auto; background: rgb(255, 255, 255); display: block; shape-rendering: auto; animation-play-state: running; animation-delay: 0s;
+  circle {
+    animation-play-state: running; animation-delay: 0s; 
+  }
+}
