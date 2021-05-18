@@ -19,8 +19,7 @@ router.post('/edit/:id', function (req, res) {
     for (var i = 0; i < config.length; i++) {
         if (config[i].id === req.params.id) {
             config[i].storyline = req.body.storyline;
-            console.log("==2==", config[i].storyline, req.body.storyline)
-          }
+        }
     }
 });
 
